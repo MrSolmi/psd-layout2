@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: "Lato";
     src: url(../font/WOFF/Lato-Reg.woff), 
@@ -24,6 +25,9 @@
     font-weight: bold;
     font-style: normal;
 }
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 html {
     height: 3000px;
@@ -31,6 +35,10 @@ html {
 
 a {
     text-decoration: none;
+}
+
+a.button {
+    display: block;
 }
 
 .clearfix:after {
@@ -61,7 +69,7 @@ a {
 
 header {
     background: url(../img/header/bg-2.png) 189px 0px no-repeat #f6eee9;
-    height: 683px;
+    height: 682px;
 }
 
 .header-menu {
@@ -90,20 +98,21 @@ header {
 
 .menu ul {
     padding: 0;
-    margin: 29px 0 0 0;
+    margin: 0;
 }
 
 .menu li {
     float: left;
     list-style-type: none;
-    padding: 0 24px 25px 25px;
     margin: 0 0 0 1px;
     font-size: 15px;
     font-family: "Lato";
 }
 
 .menu a {
+    display: block;
     color: #ffffff;
+    padding: 29px 24px 25px 25px;
 }
 
 .menu li:hover {
@@ -137,7 +146,6 @@ header {
 }
 
 .header-text_block a {
-    display: block;
     width: 114px;
     color: #3d3d39;
     font-family: Lato;
@@ -149,4 +157,93 @@ header {
     border-left: 5px solid #fac81b;
     margin: 42px 0 0 0px;
     padding: 10px 0 10px 30px;
+}
+
+/* //////////////////////////////////// */
+
+.features {
+    background: #e66768;
+    height: 659px;
+}
+
+.top_section_hr {
+    width: 87px;
+    height: 6px;
+    background: #ecba0b;
+    margin: 0 auto;
+    border: 0px;
+}
+
+.features h2 {
+    color: #ecba0b;
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 35px;
+    margin: 65px 0 0 0;
+    text-align: center; 
+}
+
+.features h2 span {
+    font-weight: bold;
+}
+
+.features-list {
+    margin: 74px auto 0 auto;
+    width: 1130px;
+}
+
+.features-list > div:first-child {
+    margin: 0;
+}
+
+.features-list > div {
+    float: left;
+    width: 245px;
+    margin: 0 0 0 50px;
+}
+
+.features-list > div > div {
+    position: relative;
+    margin: 0 auto;
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    background-color: #dd5e5f;
+}
+
+.features-list > div > div > img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.features-list > div > h3 {
+    margin: 30px 0 0 0;
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.features-list > div > p {
+    margin: 25px 0 0 0;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.features-list > div > a.button {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    width: 69px;
+    height: 10px;
+    margin: 31px auto 0 auto;
+    padding: 11px 37px 17px 37px;
+    border: 1px solid #fac81b;
+    border-left: 5px solid #fac81b;
 }
